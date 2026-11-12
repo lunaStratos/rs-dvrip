@@ -1,0 +1,20 @@
+[package]
+name = "rs-dvrip"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+license = "MIT OR Apache-2.0"
+description = "Async Rust client for the Xiongmai (XM) DVRIP / \"Sofia\" protocol used by many DVR/NVR/IP cameras (XMEye, Miracle, EasyEye, …)."
+repository = "https://github.com/lunastratos/rs-dvrip"
+readme = "README.md"
+keywords = ["dvrip", "xiongmai", "cctv", "nvr", "sofia"]
+categories = ["network-programming", "multimedia::video"]
+
+[dependencies]
+tokio = { version = "1", features = ["net", "io-util", "time", "rt"] }
+serde_json = "1"
+md-5 = "0.10"
+thiserror = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "signal", "fs"] }

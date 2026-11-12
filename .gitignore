@@ -1,0 +1,10 @@
+/target
+Cargo.lock
+
+# 예제 출력물
+*.h264
+*.h265
+*.mp4
+
+# OS
+.DS_Store
